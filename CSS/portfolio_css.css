@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.nav {
+    width: 100vw;
+    height: 7vw;
+    background-color: rgb(47, 48, 48);
+    animation: nav-anime 2s forwards;
+    position:fixed;
+    z-index: 1;
+}
+@keyframes nav-anime {
+    from{
+        top:-50px;
+    }
+    to{
+        top:0px;
+    }
+}
+
+.nav ul {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    float: inline-start;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 25px 20px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: #fff;
+    display: block;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.2s;
+    
+}
+.nav #line{
+    height:2px;
+    background-color: #fff;
+    
+}
+
+
+.right {
+    display: flex;
+    position: absolute;
+    right: 100px;
+}
+.nav a:hover{
+  color:rgb(236, 33, 236);
+}
+.nav li:hover{
+  transform: scale(1.1);
+  
+}
+.slider-container {
+  position: relative;
+  width: 80%;
+  height:70vh;
+  margin: auto;
+  overflow: hidden;
+  clear:both;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.page5 img {
+  width: 600px;
+  margin:20px;
+  height: auto;
+}
+
+.page5 button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+@media only screen and (max-width:500px) {
+  * {
+      overflow-x: hidden;
+  }
+
+  .main {
+      overflow-x: hidden;
+  }
+
+  .main .nav {
+      height: 65vh;
+      display: none;
+
+  }
+
+  .nav ul {
+      display: block;
+      margin: 0 auto;
+
+  }
+
+  .nav li {
+      width: 100vw;
+
+
+  }
+
+  .open-nav {
+      position: fixed;
+
+      float: right;
+      top:5px;
+      right:5px;
+      margin: 10px;
+      display: block;
+      color: #333;
+      background: transparent;
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1.5px solid rgb(107, 242, 247);
+  }
+
+  .close-nav {
+      position: fixed;
+
+      float: right;
+      top:5px;
+      right:5px;
+      margin: 10px;
+      display: none;
+      color: #fdf8f8;
+      background: transparent;
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1.5px solid rgb(241, 108, 108);
+      overflow-y: hidden;
+      z-index: 1;
+  }
+  .footer {
+    display: block;
+    padding: 0;
+
+}
+
+.footer div {
+    margin: 20px auto;
+    width: 90vw;
+
+}
+}

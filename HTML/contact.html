@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../CSS/contact_style.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="nav">
+            <ul>
+                <li><img src="../IMAGES/ar_logo.jpg" alt="logo" height="50"></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">OUR SERVICES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li class="right"><a href="#">SCHEDULE A VISIT</a></li>
+            </ul>
+            
+        </div>
+        <button onclick="open_nav()" class="open-nav"><span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+        <button onclick="close_nav()" class="close-nav"><span class="material-symbols-outlined nav-btn">
+                close
+            </span></button>
+    </div>
+    <div class="page1">
+
+        <div class="call">
+            <span class="material-symbols-outlined">
+                phone_in_talk
+            </span>
+            <h4>CALL US</h4>
+            <p>+91-987654321</p>
+            <p>+91-995949493</p>
+        </div>
+        <div class="address">
+            <span class="material-symbols-outlined">
+                nest_cam_indoor
+            </span>
+            <h4>OFFICE ADDRESS</h4>
+            <P>Boys Hostel New Building, Ujjain engineering college,
+                Room no.- 04
+            </P>
+        </div>
+        <div class="email">
+            <span class="material-symbols-outlined">
+                mail
+            </span>
+            <h4>EMAIL</h4>
+            <p>abcd@gmail.com</p>
+            <p>abcd111@gmail.com</p>
+        </div>
+    </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4250.799966390102!2d75.79264538432534!3d23.147850187990993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963749aa06445bf%3A0x6c66eabf98066f1c!2z4KSo4KS14KWA4KSoIOCkrOCkvuCksuCklSDgpJvgpL7gpKTgpY3gpLDgpL7gpLXgpL7gpLg!5e0!3m2!1sen!2sin!4v1706377334716!5m2!1sen!2sin"
+        width="800" height="550" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="data">
+        <form action="/contact" method="post" class="contact">
+            <input name="name" placeholder="Your name" type="text" required>
+            <input name="email" placeholder="Your email" type="email" required>
+            <input type="date" placeholder="dd/mm/yyyy" name="date" required>
+            <input type="number" placeholder="number" name="number" required>
+            <input name="message" placeholder="Your message" type="text" required>
+            <input type="submit" placeholder="Submit">
+        </form>
+    </div>
+    <div class="footer">
+        <div class="design-world">
+            <h1>AT DESIGN WORLD</h1>
+            <p>Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ea libero asperiores
+                rem nostrum quidem porro similique provident placeat
+                voluptates eum explicabo voluptatum perferendis
+                ratione fugit voluptate</p>
+        </div>
+
+        <div class="contact-us">
+            <div class="contact"><span class="material-symbols-outlined">
+                    contact_mail
+                </span>
+                <h1>CONTACT US</h1>
+            </div>
+            <div class="add">
+                <h3>Address : </h3>
+                Govt. Boys Hostel,<br>
+            </div>
+            Ujjain Enginerring Colllege<br>
+            <p class="phone"> <span class="material-symbols-outlined">
+                    call
+                </span>+91- 99998888111</p>
+            <p class="mail"> <span class="material-symbols-outlined">
+                    mail
+                </span> bhpublic123@gmail.com</p>
+        </div>
+    </div>
+    <script>
+        function open_nav() {
+            const open = document.querySelector('.main .nav');
+            const close_btn = document.querySelector('.main .close-nav');
+            close_btn.style.display = 'block';
+            open.style.display = 'block';
+            const open_btn = document.querySelector('.main .open-nav');
+            open_btn.style.display = 'none';
+        }
+        function close_nav() {
+            const close = document.querySelector('.main .nav');
+            const open_btn = document.querySelector('.main .open-nav');
+            open_btn.style.display = 'block';
+            close.style.display = 'none';
+            const close_btn = document.querySelector('.main .close-nav');
+            close_btn.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
